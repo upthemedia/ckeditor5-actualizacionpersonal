@@ -102,12 +102,9 @@
 		</p>
 	</footer>
 	<script src="../build/ckeditor.js"></script>
-	<script>
-
-	ClassicEditor
+	<script>ClassicEditor
 			.create( document.querySelector( '.editor' ), {
-				plugins: [SimpleUploadAdapter],
-				simpleUpload: {},
+				
 				toolbar: {
 					items: [
 						'heading',
@@ -118,8 +115,6 @@
 						'bulletedList',
 						'numberedList',
 						'|',
-						'indent',
-						'outdent',
 						'|',
 						'imageUpload',
 						'blockQuote',
@@ -129,6 +124,13 @@
 					]
 				},
 				language: 'es',
+				image: {
+					toolbar: [
+						'imageTextAlternative',
+						'imageStyle:full',
+						'imageStyle:side'
+					]
+				},
 				table: {
 					contentToolbar: [
 						'tableColumn',
@@ -137,23 +139,23 @@
 					]
 				},
 				licenseKey: '',
-
+				
 			} )
 			.then( editor => {
 				window.editor = editor;
-
-
-
-
-
-
-
-
+		
+				
+				
+				
+		
+				
+				
+				
 			} )
 			.catch( error => {
 				console.error( 'Oops, something went wrong!' );
 				console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
-				console.warn( 'Build id: h5vqegrce0k2-ltg3fnvn6ys1' );
+				console.warn( 'Build id: t55oywe1isyj-rtw6owk8m3tx' );
 				console.error( error );
 			} );
 	</script>
