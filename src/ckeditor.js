@@ -8,6 +8,8 @@ import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
+import Image from '@ckeditor/ckeditor5-image/src/image.js';
+import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload.js';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent.js';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
@@ -28,6 +30,8 @@ Editor.builtinPlugins = [
 	Bold,
 	Essentials,
 	Heading,
+	Image,
+	ImageUpload,
 	Indent,
 	Italic,
 	Link,
